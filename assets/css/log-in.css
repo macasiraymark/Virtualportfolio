@@ -1,0 +1,30 @@
+/*body {
+               
+                background: linear-gradient(270deg, #3CA55C, #B5AC49);
+                background-size: 600% 600%;
+                animation: BackgroundGradient 5s ease infinite;
+            }
+            
+            @keyframes BackgroundGradient {
+                0% {background-position: 0% 50%;}
+                50% {background-position: 100% 50%;}
+                100% {background-position: 0% 50%;}
+            }
+            h1 {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                font-family: Open Sans, sans-serif;
+                color: #fff;
+                font-weight: 400;
+                text-transform: uppercase;
+                text-align: center;
+                background-color: #000;
+                padding: 5px;
+                }
+*/
+
+body{
+    background-color: #e3e8ed;
+}
