@@ -1,5 +1,5 @@
 <?php include 'partials/header.php'; ?>
-
+<?php include 'config/database.php'; ?>
 <div >
   
   <!-- page content -->
@@ -26,16 +26,10 @@
 
                 <div class="tile-stats">
                   <?php 
-                   try{
-                        $pdoConnect = new PDO("mysql:host=localhost;dbname=db_virtualportfolio","root","");
-                    } catch (PDOException $ex) {
-                        echo $ex->getMessage();
-                        exit();
-                    }
 
                     $pdoQuery = "SELECT * FROM tbl_accounts";
 
-                    $pdoResult = $pdoConnect->query($pdoQuery);
+                    $pdoResult = $connection->query($pdoQuery);
 
                     $pdoRowCount = $pdoResult->rowCount();
                                         
@@ -50,16 +44,10 @@
               <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="tile-stats">
                   <?php 
-                   try{
-                        $pdoConnect = new PDO("mysql:host=localhost;dbname=db_virtualportfolio","root","");
-                    } catch (PDOException $ex) {
-                        echo $ex->getMessage();
-                        exit();
-                    }
 
                     $pdoQuery = "SELECT * FROM tbl_agriculturist";
 
-                    $pdoResult = $pdoConnect->query($pdoQuery);
+                    $pdoResult = $connection->query($pdoQuery);
 
                     $pdoRowCount = $pdoResult->rowCount();
                                         
@@ -75,16 +63,10 @@
               <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="tile-stats">
                   <?php 
-                   try{
-                        $pdoConnect = new PDO("mysql:host=localhost;dbname=db_virtualportfolio","root","");
-                    } catch (PDOException $ex) {
-                        echo $ex->getMessage();
-                        exit();
-                    }
 
                     $pdoQuery = "SELECT * FROM tbl_portfolios";
 
-                    $pdoResult = $pdoConnect->query($pdoQuery);
+                    $pdoResult = $connection->query($pdoQuery);
 
                     $pdoRowCount = $pdoResult->rowCount();
                                         
@@ -100,16 +82,10 @@
                 <div class="tile-stats">
                   
                   <?php 
-                   try{
-                        $pdoConnect = new PDO("mysql:host=localhost;dbname=db_virtualportfolio","root","");
-                    } catch (PDOException $ex) {
-                        echo $ex->getMessage();
-                        exit();
-                    }
 
                     $pdoQuery = "SELECT * FROM tbl_category";
 
-                    $pdoResult = $pdoConnect->query($pdoQuery);
+                    $pdoResult = $connection->query($pdoQuery);
 
                     $pdoRowCount = $pdoResult->rowCount();
                                         
