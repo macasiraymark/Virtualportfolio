@@ -1,2 +1,2 @@
 # virtualportfolio
-PHP
+PHP with AngularJS
